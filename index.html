@@ -7,6 +7,13 @@
 <meta name="description" content="Yuhao Chen builds the control plane behind Amazon ECS: task placement, lifecycle orchestration, and scale for large container and AI fleets.">
 <link rel="canonical" href="https://cedricchan.github.io/">
 <meta property="og:url" content="https://cedricchan.github.io/">
+<meta property="og:image" content="https://cedricchan.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Yuhao Chen, software development engineer on Amazon ECS: I build the control plane that schedules billions of containers a week.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cedricchan.github.io/og.png">
 <meta property="og:title" content="Yuhao Chen · Software Engineer, Amazon ECS">
 <meta property="og:description" content="Control plane engineer on Amazon ECS: task placement, lifecycle orchestration, and scale for large container and AI workloads.">
 <meta property="og:type" content="website">
@@ -357,7 +364,7 @@
   (function(){
     const host=document.getElementById('art'); if(!host) return;
     const W=520,H=430;
-    const svg=el('svg',{viewBox:`30 82 ${W-30} ${H-82}`,style:'width:100%;height:auto;display:block'});
+    const svg=el('svg',{viewBox:`16 82 ${W-16} ${H-82}`,style:'width:100%;height:auto;display:block'});
     const arrow=(x1,y1,x2,y2,c,dash)=>{const a={d:`M${x1},${y1} L ${x2},${y2}`,stroke:c,'stroke-width':1.5,fill:'none'};if(dash)a['stroke-dasharray']=dash;el('path',a,svg);
       const t=Math.atan2(y2-y1,x2-x1),s=6;el('path',{d:`M${x2-s*Math.cos(t-.5)},${y2-s*Math.sin(t-.5)} L ${x2},${y2} L ${x2-s*Math.cos(t+.5)},${y2-s*Math.sin(t+.5)}`,stroke:c,'stroke-width':1.5,fill:'none'},svg);};
     // tasks streaming in
