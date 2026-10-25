@@ -3,8 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101c22">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <title>Yuhao Chen · Software Engineer, Amazon ECS</title>
-<meta name="description" content="Yuhao Chen is a software engineer at AWS building cloud-scale container infrastructure: GPU sharing, task placement, lifecycle orchestration, and managed compute on Amazon ECS.">
+<meta name="description" content="Yuhao Chen | Software engineer at Amazon ECS. Distributed systems, GPU scheduling, container placement, and lifecycle orchestration.">
 <link rel="canonical" href="https://cedricchan.github.io/">
 <meta property="og:url" content="https://cedricchan.github.io/">
 <meta property="og:image" content="https://cedricchan.github.io/og.png">
@@ -13,6 +15,7 @@
 <meta property="og:image:alt" content="Yuhao Chen, software development engineer on Amazon ECS: I build the control plane that schedules billions of containers a week.">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yuhao Chen | Software Engineer, Amazon ECS">
 <meta name="twitter:image" content="https://cedricchan.github.io/og.png">
 <meta property="og:title" content="Yuhao Chen · Software Engineer, Amazon ECS">
 <meta property="og:description" content="Cloud-scale infrastructure, GPU sharing, task placement, and lifecycle orchestration on Amazon ECS.">
@@ -247,6 +250,10 @@
   }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:0s!important;animation-duration:0s!important}}
 
+  .impact{display:flex;flex-wrap:wrap;gap:8px;margin:3px 0 22px}
+  .impact span{display:inline-flex;align-items:center;min-height:31px;padding:6px 10px;border:1px solid #cadad1;background:#edf5ef;color:#2b6555;font:600 10px/1.5 var(--mono)}
+  .impact b{font-size:13px;line-height:1;margin-right:5px;color:var(--accent-dark)}
+  @media(max-width:590px){.impact{gap:6px;margin-bottom:17px}.impact span{font-size:9px;padding:5px 8px}}
   /* Intentional motion: lightweight, content-first, and reduced-motion safe. */
   .reading-progress{position:absolute;bottom:-1px;left:0;height:2px;width:100%;background:var(--mint);transform:scaleX(0);transform-origin:left;will-change:transform;pointer-events:none;z-index:2;opacity:.9}
   @media(prefers-reduced-motion:no-preference){
@@ -313,12 +320,12 @@
     <div>
     <div class="hero-ident"><span class="hero-dot" aria-hidden="true"></span> YUHAO CHEN <span class="hero-ident__slash">/</span> SOFTWARE ENGINEER AT AWS</div>
     <div class="eyebrow hero-eyebrow">AMAZON ELASTIC CONTAINER SERVICE · CONTROL PLANE</div>
-    <h1>Engineering the systems behind <em>cloud-scale compute.</em></h1>
-    <p class="lede">I build the control plane that schedules billions of containers a week. At Amazon ECS, I work across <strong>GPU sharing, placement, and lifecycle orchestration</strong>—taking complex infrastructure from design through production. Previously, I built automation and fleet management systems for AWS Infrastructure.</p>
+    <h1>Building the infrastructure behind <em>container and GPU computing.</em></h1>
+    <p class="lede">I build infrastructure for container workloads at cloud scale. At Amazon ECS, I lead work across <strong>resource-aware placement, GPU compute, and task lifecycle orchestration</strong>—from system design through production delivery. Previously, I built fleet management systems for AWS Infrastructure.</p>
     <div class="cta">
       <a class="btn primary" href="#work">Explore selected work <span aria-hidden="true">↗</span></a>
-      <a class="btn" href="https://www.linkedin.com/in/cedricchen/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn" href="https://www.linkedin.com/in/cedricchen/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="/resume.pdf" download="Yuhao_Chen_Resume.pdf" type="application/pdf">Download resume ↓</a>
+      <a class="btn" href="mailto:lightman.ece@gmail.com">Email ↗</a>
     </div>
     <p class="reach">Seattle, WA · <a href="mailto:lightman.ece@gmail.com">lightman.ece@gmail.com</a> · <a href="https://www.linkedin.com/in/cedricchen/" target="_blank" rel="noopener">linkedin.com/in/cedricchen</a></p>
     </div>
@@ -327,7 +334,7 @@
     <div class="nums">
       <div class="num"><b>0</b><span>minutes of downtime migrating the store every ECS instance depends on, in every region</span></div>
       <div class="num"><b>8</b><span>engineers led as workstream lead for a product launch</span></div>
-      <div class="num"><b>4</b><span>major ECS initiatives led since 2024, including GPU sharing ahead of launch</span></div>
+      <div class="num"><b>4</b><span>major ECS initiatives led since 2024, including ongoing GPU work</span></div>
     </div>
   </section>
   </div>
@@ -351,22 +358,22 @@
 
     <article class="case rv case--gpu">
       <div>
-        <div class="project-topline"><span>01 / ACCELERATED COMPUTE</span><span class="project-status"><span class="status-dot"></span> TARGETED OCT 27, 2026</span></div>
-        <div class="role">2026 · GPU infrastructure · Production launch planned October 27</div>
-        <h3>GPU sharing for Amazon ECS</h3>
-        <p>Led ECS control-plane design work for sharing GPU capacity across containerized workloads using NVIDIA Multi-Process Service (MPS), with a focus on GPU-aware placement and task resource lifecycle.</p>
-        <p><b>Cross-team design:</b> Aligned customer-facing resource semantics and integration boundaries, and drove low-level design for the supporting control-plane workflows.</p>
+        <div class="project-topline"><span>01 / ACCELERATED COMPUTE</span><span class="project-status"><span class="status-dot"></span> IN PROGRESS</span></div>
+        <div class="role">2026 · GPU infrastructure · Technical design lead</div>
+        <h3>GPU sharing for Amazon ECS</h3><div class="impact"><span>CONTROL PLANE</span><span>GPU SCHEDULING</span><span>DESIGN LEAD</span></div>
+        <p>Leading control-plane design for GPU resource sharing in containerized workloads, focusing on scheduling and task lifecycle integration.</p>
+        <p><b>My contribution:</b> Aligned resource management requirements across teams and provided technical direction for implementation.</p>
         <details><summary>How</summary>
           <ul>
-            <li>Designed GPU placement simulation, resource allocation, and reclamation paths for task lifecycle changes.</li>
-            <li>Authored the CMBS low-level design and provided technical direction to two engineers.</li>
-            <li>Production launch targeted for October 27, 2026; launch status and impact metrics to be updated after release.</li>
+            <li>Define scheduling and lifecycle requirements for accelerated container workloads.</li>
+            <li>Align cross-service contracts and operational considerations.</li>
+            <li>Public release details and measured impact will be added after announcement.</li>
           </ul>
         </details>
       </div>
       <div class="visual visual--gpu">
         <div class="diagram-head"><span>FIG. 02 / GPU RESOURCE SHARING</span><span>CONCEPTUAL VIEW</span></div>
-        <div class="gpu-diagram" role="img" aria-label="Conceptual diagram showing two container workloads sharing GPU capacity via ECS placement and NVIDIA MPS">
+        <div class="gpu-diagram" role="img" aria-label="Conceptual diagram showing workloads sharing GPU capacity">
           <div class="gpu-task-stack">
             <div class="gpu-diagram-label">CONTAINER TASKS</div>
             <div class="gpu-task"><i></i><span>Workload A</span><small>GPU REQUEST</small></div>
@@ -375,13 +382,13 @@
           <div class="gpu-connector"><span>PLACE</span><b aria-hidden="true">→</b><span>RECLAIM</span></div>
           <div class="gpu-device">
             <div class="gpu-device-top"><span class="gpu-device-icon">✳</span><span>GPU CAPACITY</span></div>
-            <div class="gpu-chip"><strong>NVIDIA MPS</strong><span>Shared execution</span></div>
+            <div class="gpu-chip"><strong>GPU RESOURCE</strong><span>Shared capacity</span></div>
             <div class="gpu-slots"><div><span>A</span></div><div><span>B</span></div></div>
             <div class="gpu-device-bottom">RESOURCE LIFECYCLE</div>
           </div>
         </div>
-        <div class="gpu-diagram-steps"><span><b>01</b> Place</span><span><b>02</b> Allocate</span><span><b>03</b> Reclaim</span></div>
-        <div class="cap">Conceptual illustration of GPU sharing and resource lifecycle. Production launch is planned for October 27, 2026.</div>
+        <div class="gpu-diagram-steps"><span><b>01</b> Schedule</span><span><b>02</b> Share</span><span><b>03</b> Operate</span></div>
+        <div class="cap">Conceptual illustration only; engineering details and impact metrics will be published when available.</div>
       </div>
     </article>
 
@@ -394,9 +401,9 @@
       <div>
         <div class="project-topline"><span>02 / MANAGED COMPUTE</span><span class="project-status status--live">SHIPPED 2025</span></div>
         <div class="role">2025 · Task launch workstream lead</div>
-        <h3>Launching Amazon ECS Managed Instances</h3>
-        <p>Managed Instances gives customers EC2 capacity that ECS provisions and operates for them. I led the task launch workstream through to general availability, owning the control plane launch path and the operational readiness that let it ship on time.</p>
-        <p><b>Across three teams:</b> I aligned eight senior and principal engineers around a shared milestone plan, decision log, and GA blocker criteria, with weekly readouts to senior leadership.</p>
+        <h3>Launching Amazon ECS Managed Instances</h3><div class="impact"><span><b>8</b> engineers</span><span><b>3</b> teams</span><span><b>6</b> GA regions</span></div>
+        <p>Led the task launch workstream for ECS Managed Instances, delivering the control-plane launch path and production readiness through general availability.</p>
+        <p><b>My contribution:</b> Coordinated eight senior and principal engineers across three teams, driving placement decisions and launch blockers.</p>
         <div class="links"><a href="https://aws.amazon.com/blogs/aws/announcing-amazon-ecs-managed-instances-for-containerized-applications/" target="_blank" rel="noopener">Launch announcement ↗</a><a href="https://aws.amazon.com/blogs/containers/deep-dive-amazon-ecs-managed-instances-provisioning-and-optimization/" target="_blank" rel="noopener">Deep dive: provisioning and optimization ↗</a></div>
         <details><summary>How</summary>
           <ul>
@@ -412,9 +419,9 @@
       <div>
         <div class="project-topline"><span>03 / DISTRIBUTED ORCHESTRATION</span><span class="project-status status--live">SHIPPED 2026</span></div>
         <div class="role">Oct 2025 to May 2026 · Tech lead · team of 4, four partner teams</div>
-        <h3>Moving task lifecycle orchestration out of the monolith</h3>
-        <p>I led a team of four to move task lifecycle hooks into a dedicated asynchronous orchestration service. Rolled out to every commercial region, the shared path unblocked two launches and lets integrators extend task startup and shutdown without changing the core.</p>
-        <p><b>Across four partner teams:</b> I resolved orchestration contract gaps, kept decisions and owners in a shared log, and coordinated security review and a live integration demo before launch.</p>
+        <h3>Moving task lifecycle orchestration out of the monolith</h3><div class="impact"><span><b>4</b> engineers</span><span><b>6</b> waves</span><span><b>2</b> launches enabled</span></div>
+        <p>Led four engineers migrating task lifecycle hooks from a monolith into an asynchronous service, deployed across commercial regions and enabling two launches.</p>
+        <p><b>My contribution:</b> Defined cross-team integration contracts, resolved ownership gaps, and coordinated security review and rollout readiness.</p>
         <div class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-ecs-managed-daemons/" target="_blank" rel="noopener">Managed Daemons launch, April 2026 ↗</a></div>
         <details><summary>How</summary>
           <ul>
@@ -440,9 +447,9 @@
       <div>
         <div class="project-topline"><span>04 / SAFE MIGRATIONS</span><span class="project-status status--live">SHIPPED 2024</span></div>
         <div class="role">2024 · Tech lead · team of 3 · first project on ECS</div>
-        <h3>Zero downtime migration of the agent credential store</h3>
-        <p>Every container instance fetches task credentials from one store. It lived in a write-expensive ledger database that had become a cost and scaling risk. I led a team of three to move it to DynamoDB in every region, including isolated partitions, without a moment of downtime.</p>
-        <p><b>Making the rollout repeatable:</b> I defined the release and test plan, made each migration phase reversible through configuration, and owned the security review with the application security team.</p>
+        <h3>Zero downtime migration of the agent credential store</h3><div class="impact"><span><b>0</b> downtime</span><span>ALL REGIONS</span><span><b>2,300</b> legacy lines retired</span></div>
+        <p>Led a three-engineer migration of the ECS agent credential store to DynamoDB across all regions, including isolated partitions, with zero downtime.</p>
+        <p><b>My contribution:</b> Designed reversible rollout phases, owned testing and security review, and retired approximately 2,300 lines of legacy code.</p>
         <details><summary>How</summary>
           <ul>
             <li>Wrote the decision log and a "write diet" that cut write volume before the move, then the low level design, the prototype, and the release and test plan.</li>
