@@ -152,6 +152,71 @@
   @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
   @media (max-width:600px){.eyebrow{letter-spacing:.12em;font-size:.72rem}.lede{font-size:1.02rem}}
   @media print{header,.cta,.btn,.art{display:none!important}body{background:#fff;color:#000}body::before{display:none}.rv{opacity:1!important;transform:none!important}section.wrap{padding:28px 0}.case{page-break-inside:avoid}details{display:block}details summary{display:none}details>ul{display:block}.visual{box-shadow:none}a{color:#000}}
+
+  /* Portfolio refresh — restrained editorial layout, sharper hierarchy */
+  :root{
+    --bg:#f5f4ef;--ink:#17202a;--ink2:#384454;--muted:#627080;
+    --line:rgba(23,32,42,.13);--card:#fffefa;--accent:#087d70;
+    --accent2:#6556a8;--warm:#a97730;
+    --shadow:0 1px 2px rgba(20,29,40,.025),0 24px 58px rgba(20,29,40,.045);
+    --max:1140px;
+  }
+  body{line-height:1.7;letter-spacing:-.006em}
+  body::before{background:radial-gradient(950px 620px at 90% 0%,rgba(8,125,112,.055),transparent 65%)}
+  header{background:rgba(245,244,239,.93);border-bottom:1px solid var(--line)}
+  nav{height:78px}
+  nav ul{gap:34px}
+  nav ul a{font-size:.78rem;font-weight:600;letter-spacing:.055em;text-transform:uppercase}
+  .brand{font-size:1.3rem;letter-spacing:-.025em}
+  section.wrap{padding-top:128px;padding-bottom:128px}
+  section.tight{padding-top:0}
+  .hero.wrap{padding-top:152px;padding-bottom:96px}
+  .hero-grid{grid-template-columns:1.16fr .84fr;gap:72px}
+  .name{font-size:1.2rem;font-family:var(--sans);font-weight:600;margin-bottom:26px}
+  .eyebrow{font-size:.71rem;letter-spacing:.22em}
+  h1{font-size:clamp(3.25rem,6.6vw,6.35rem);line-height:1.01;letter-spacing:-.055em;max-width:15ch;margin:25px 0 34px}
+  h1 em{color:var(--accent);font-weight:300}
+  h2{font-size:clamp(2.55rem,4.7vw,4.65rem);letter-spacing:-.048em;max-width:17ch;line-height:1.06}
+  .lede{font-size:1.15rem;line-height:1.85;max-width:55ch}
+  .cta{margin-top:40px}
+  .btn{padding:13px 24px;font-size:.88rem;box-shadow:none}
+  .nums{margin-top:108px;border-top:1px solid var(--ink)}
+  .num{padding:35px 32px 8px 0;margin-right:30px}
+  .num b{font-size:clamp(3.4rem,5vw,5rem);letter-spacing:-.05em}
+  .num span{font-size:.84rem;line-height:1.65;max-width:24ch}
+  .pillars{gap:16px;margin-top:58px}
+  .pillar{box-shadow:none;border-radius:8px;padding:36px 30px;min-height:230px}
+  .pillar h3{font-size:1.65rem;letter-spacing:-.025em}
+  .pillar p{font-size:.9rem;line-height:1.8}
+  .pillar .k{width:40px;height:2px;margin-bottom:25px}
+  #work{border-top:1px solid var(--line)}
+  #work>h2{margin-bottom:65px}
+  .case{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:76px;padding:92px 0;border-top:1px solid var(--line)}
+  .case:first-of-type{padding-top:48px}
+  .case h3{font-size:clamp(2rem,3.2vw,3rem);line-height:1.16;letter-spacing:-.045em;margin:18px 0 24px}
+  .case .role{font-size:.73rem;font-weight:600;text-transform:uppercase;letter-spacing:.11em;color:var(--accent)}
+  .case p{font-size:.97rem;line-height:1.85;margin-bottom:19px}
+  .visual{border-radius:9px;box-shadow:none;padding:36px;background:#eceeea;border-color:rgba(23,32,42,.075)}
+  .visual svg{max-width:100%}
+  .cap{line-height:1.65;font-size:.78rem}
+  .case details{margin-top:24px}
+  .case summary{font-size:.84rem}
+  .links{gap:20px;font-size:.82rem;line-height:1.8}
+  .also{margin-top:60px}
+  .also li{grid-template-columns:100px 1fr;gap:34px;padding:26px 0}
+  .also .y{font-size:.74rem;letter-spacing:.08em}
+  .also b{font-size:1rem;color:var(--ink)}
+  .also span{display:inline-block;margin-top:5px;font-size:.91rem;line-height:1.7}
+  .refs{margin-top:90px}
+  .refs ul{gap:17px 40px}
+  .refs li{line-height:1.65;font-size:.85rem}
+  .tl{border-radius:9px;box-shadow:none;padding:42px}
+  footer{padding:90px 0}
+  a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+  @media(max-width:900px){.hero.wrap{padding-top:100px}.hero-grid{grid-template-columns:1fr}.case{gap:32px}}
+  @media(max-width:860px){.case{grid-template-columns:1fr}.visual{order:2}.case>div:not(.visual){order:1}}
+  @media(max-width:700px){section.wrap{padding:82px 24px}.hero.wrap{padding:90px 24px 65px}h1{font-size:clamp(2.85rem,10vw,4.3rem)}.nums{margin-top:65px}.num{margin-right:0;padding:28px 0}.case{padding:54px 0}.case h3{font-size:2.15rem}.visual{padding:22px}.pillars{margin-top:38px}.pillar{min-height:unset}.also li{grid-template-columns:1fr;gap:5px}.tl{padding:22px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
@@ -290,7 +355,7 @@
         <li><div class="y">2025</div><div><b>Managed daemons</b><br><span>Led the low level design of the daemon definition and its validation, then carried the capability to GA a year later. <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons.html" target="_blank" rel="noopener" style="color:var(--accent)">Docs ↗</a></span></div></li>
         <li><div class="y">2025</div><div><b>Task credential delivery architecture</b><br><span>Drove the integration contract with a partner platform team and the credential vending approach that unblocked customer managed encryption keys.</span></div></li>
         <li><div class="y">2024 · 2025</div><div><b>Six new regions for the agent proxy layer</b><br><span>Region builds, autoscaling, and a deployment tuning that removed database egress spikes.</span></div></li>
-        <li><div class="y">2026</div><div><b>AWS Batch on Managed Instances</b><br><span>ECS point of contact for the integration, including a capacity provider level vCPU limit design.</span></div></li>
+        <li><div class="y">2026</div><div><b>AWS Batch on Managed Instances</b><br><span>ECS point of contact for the integration, including a capacity provider level vCPU limit design. <a href="https://aws.amazon.com/about-aws/whats-new/2026/08/aws-batch-on-ecs-managed-instances/" target="_blank" rel="noopener" style="color:var(--accent)">AWS launch announcement ↗</a></span></div></li>
       </ul>
     </div>
 
@@ -549,7 +614,7 @@
     const g1=el('linearGradient',{id:'s1',x1:0,x2:1},defs);el('stop',{offset:0,'stop-color':ACC2,'stop-opacity':.5},g1);el('stop',{offset:1,'stop-color':ACC2},g1);
     const g2=el('linearGradient',{id:'s2',x1:0,x2:1},defs);el('stop',{offset:0,'stop-color':ACC},g2);el('stop',{offset:1,'stop-color':'#3aa7d9'},g2);
     [['2020-07','2024-01','url(#s1)','AWS Infrastructure: automation and fleet management','Software engineer'],
-     ['2024-01','2026-10','url(#s2)','Amazon ECS control plane','Software engineer, tech lead on three deliveries']].forEach(sg=>{
+     ['2024-01','2026-10','url(#s2)','Amazon ECS control plane','Software engineer, technical lead across ECS initiatives']].forEach(sg=>{
       const a=X(sg[0]),b=X(sg[1]);
       el('rect',{x:a,y:y-9,width:b-a-4,height:18,rx:9,fill:sg[2]},svg);
       txt(svg,(a+b)/2,y+60,sg[3],{'text-anchor':'middle',fill:INK,'font-size':14,'font-weight':600});
