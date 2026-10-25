@@ -200,6 +200,28 @@
 
 
     <article class="case rv">
+      <div>
+        <div class="role">2026 · GPU infrastructure · Production launch planned October 27</div>
+        <h3>GPU sharing for Amazon ECS</h3>
+        <p>Led ECS control-plane design work for sharing GPU capacity across containerized workloads using NVIDIA Multi-Process Service (MPS), with a focus on GPU-aware placement and task resource lifecycle.</p>
+        <p><b>Cross-team design:</b> Aligned customer-facing resource semantics and integration boundaries, and drove low-level design for the supporting control-plane workflows.</p>
+        <details><summary>How</summary>
+          <ul>
+            <li>Designed GPU placement simulation, resource allocation, and reclamation paths for task lifecycle changes.</li>
+            <li>Authored the CMBS low-level design and provided technical direction to two engineers.</li>
+            <li>Production launch targeted for October 27, 2026; launch status and impact metrics to be updated after release.</li>
+          </ul>
+        </details>
+      </div>
+      <div class="visual">
+        <div class="eyebrow">GPU-aware scheduling</div>
+        <h3 style="font-size:1.45rem;margin:18px 0 12px">Share · Place · Reclaim</h3>
+        <div class="bignum"><div><b>MPS</b><span>NVIDIA Multi-Process Service</span></div><div><b>ECS</b><span>Control-plane integration</span></div></div>
+        <div class="cap">Design and launch preparation for GPU sharing in containerized workloads. Planned launch: October 27, 2026.</div>
+      </div>
+    </article>
+
+    <article class="case rv">
       <div class="visual">
         <div id="milaunch"></div>
         <div class="cap">The task launch path for Managed Instances: place with zone and subnet awareness, provision capacity on demand, register instances that arrive with their tasks already bound. Eight senior and principal engineers across three teams, six regions at general availability, zero open launch blockers.</div>
