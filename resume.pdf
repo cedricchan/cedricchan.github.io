@@ -1,0 +1,68 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /FR 5 0 R /FB 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3412 >>
+stream
+0.09 0.14 0.18 rg BT /FB 25 Tf 1 0 0 1 44 747 Tm (YUHAO CHEN) Tj ET
+0.07 0.47 0.40 rg BT /FB 10 Tf 1 0 0 1 44 721 Tm (SOFTWARE ENGINEER / CLOUD INFRASTRUCTURE / DISTRIBUTED SYSTEMS) Tj ET
+0.16 0.23 0.26 rg BT /FR 9 Tf 1 0 0 1 44 701 Tm (Seattle, WA  |  lightman.ece@gmail.com  |  linkedin.com/in/cedricchen) Tj ET
+0.80 0.86 0.83 RG 0.8 w 44 688 m 568 688 l S
+0.07 0.47 0.40 rg BT /FB 10 Tf 1 0 0 1 44 668 Tm (PROFILE) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.5 Tf 1 0 0 1 44 649 Tm (Software engineer at AWS building cloud-scale container infrastructure, distributed scheduling,) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.5 Tf 1 0 0 1 44 636 Tm (and task lifecycle systems. Technical lead for cross-team ECS production initiatives.) Tj ET
+0.07 0.47 0.40 rg BT /FB 10 Tf 1 0 0 1 44 606 Tm (EXPERIENCE) Tj ET
+0.80 0.86 0.83 RG 0.8 w 44 597 m 568 597 l S
+0.16 0.23 0.26 rg BT /FB 11 Tf 1 0 0 1 44 578 Tm (AMAZON WEB SERVICES / AMAZON ECS) Tj ET
+0.16 0.23 0.26 rg BT /FR 9 Tf 1 0 0 1 488 578 Tm (2024 - Now) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.4 Tf 1 0 0 1 44 558 Tm (Software Development Engineer) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 48 538 Tm (- Managed Instances: Led an 8-engineer launch workstream across 3 teams; supported GA in 6 AWS Regions.) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 48 521 Tm (- Task lifecycle: Led 4 engineers delivering asynchronous orchestration for ECS container tasks,) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 60 508 Tm (  rolled out across commercial Regions and enabling 2 product launches.) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 48 491 Tm (- Agent credential store: Led zero-downtime migration to DynamoDB across AWS Regions,) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 60 478 Tm (  with reversible rollout phases and removal of approximately 2,300 lines of legacy code.) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 48 461 Tm (- GPU infrastructure: Leading design for resource-aware scheduling and task lifecycle integration.) Tj ET
+0.16 0.23 0.26 rg BT /FB 11 Tf 1 0 0 1 44 429 Tm (AMAZON WEB SERVICES / INFRASTRUCTURE SYSTEMS) Tj ET
+0.16 0.23 0.26 rg BT /FR 9 Tf 1 0 0 1 488 429 Tm (2020 - 2024) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.4 Tf 1 0 0 1 44 410 Tm (Software Development Engineer) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 48 390 Tm (- Built near-real-time inventory search across microservice stores and automated vendor ingestion.) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 48 373 Tm (- Designed a regional inventory service, Solr query path, and parts movement state machine.) Tj ET
+0.07 0.47 0.40 rg BT /FB 10 Tf 1 0 0 1 44 340 Tm (EDUCATION) Tj ET
+0.80 0.86 0.83 RG 0.8 w 44 331 m 568 331 l S
+0.16 0.23 0.26 rg BT /FB 9.8 Tf 1 0 0 1 44 313 Tm (Georgia Institute of Technology) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.2 Tf 1 0 0 1 362 313 Tm (M.S. Computer Engineering / 2020) Tj ET
+0.16 0.23 0.26 rg BT /FB 9.8 Tf 1 0 0 1 44 293 Tm (Zhejiang University) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.2 Tf 1 0 0 1 362 293 Tm (B.S. Computer Engineering / 2018) Tj ET
+0.07 0.47 0.40 rg BT /FB 10 Tf 1 0 0 1 44 258 Tm (TECHNICAL FOCUS) Tj ET
+0.80 0.86 0.83 RG 0.8 w 44 249 m 568 249 l S
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 44 231 Tm (AWS / Amazon ECS / Distributed systems / Resource scheduling / Container orchestration) Tj ET
+0.16 0.23 0.26 rg BT /FR 9.1 Tf 1 0 0 1 44 216 Tm (Asynchronous workflows / Operational readiness / Data migrations / Security reviews) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000003714 00000 n 
+0000003784 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+3859
+%%EOF
