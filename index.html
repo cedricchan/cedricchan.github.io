@@ -240,7 +240,12 @@
     #lead,#beyond{padding-top:35px}
     footer{padding:75px 0 45px}footer h2{font-size:3rem}.footer-subline{line-height:1.65}
   }
-  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:0s!important;animation-duration:0s!important}}
+  @media(max-width:470px){
+    #milaunch,#lifecycle,#rollout,#chain{overflow-x:auto;scrollbar-width:thin;scrollbar-color:#aac9b9 transparent}
+    #milaunch svg,#lifecycle svg,#rollout svg,#chain svg{min-width:440px}
+    #timeline{display:none}
+  }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:0s!important;animation-duration:0s!important}}
   @media print{
     header,.cta,.art-frame,footer .btn,.mobile-nav{display:none!important}
     html,body,.hero-shell,footer{background:#fff!important;color:#000!important}
@@ -505,10 +510,14 @@
 <script>
 (function(){
   'use strict';
+  document.querySelectorAll('.mobile-nav__links a').forEach(link => link.addEventListener('click', () => {
+    const menu = link.closest('details');
+    if (menu) menu.open = false;
+  }));
   const NS='http://www.w3.org/2000/svg';
   const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;};
   const txt=(p,x,y,s,a)=>{const t=el('text',Object.assign({x,y,fill:'#6b7484','font-size':12,'font-family':'Inter,system-ui,sans-serif'},a||{}),p);t.textContent=s;return t;};
-  const ACC='#0f9d8a',ACC2='#6d5bd0',WARM='#d98b1f',INK='#0f1419',LINE='rgba(15,20,25,.12)';
+  const ACC='#187b6b',ACC2='#6d5bd0',WARM='#c59454',INK='#18242c',LINE='rgba(24,36,44,.14)';
   const ym=s=>{const [y,m]=s.split('-').map(Number);return y+(m-1)/12;};
 
 
@@ -527,7 +536,7 @@
     el('rect',{x:108,y:84,width:212,height:262,rx:20,fill:'#fff',stroke:'rgba(15,20,25,.14)','stroke-width':1},svg);
     txt(svg,214,112,'ECS control plane',{'text-anchor':'middle',fill:INK,'font-size':12,'font-weight':600,'letter-spacing':'.08em'});
     // placement module
-    el('rect',{x:126,y:130,width:176,height:78,rx:12,fill:'rgba(15,157,138,.07)',stroke:ACC,'stroke-width':1.3},svg);
+    el('rect',{x:126,y:130,width:176,height:78,rx:12,fill:'rgba(24,123,107,.07)',stroke:ACC,'stroke-width':1.3},svg);
     txt(svg,214,155,'Placement',{'text-anchor':'middle',fill:INK,'font-size':13.5,'font-weight':600});
     txt(svg,214,174,'zone, subnet, accelerator aware',{'text-anchor':'middle',fill:'#6b7484','font-size':10.5});
     txt(svg,214,190,'sample, then choose the best fit',{'text-anchor':'middle',fill:'#6b7484','font-size':10.5});
@@ -580,7 +589,7 @@
     // zones
     const zx=[228,300,372],zw=60,zy=30,zh=136;
     ['zone a','zone b','zone c'].forEach((z,i)=>{const on=i===0;
-      el('rect',{x:zx[i],y:zy,width:zw,height:zh,rx:10,fill:on?'rgba(15,157,138,.07)':'rgba(15,20,25,.03)',stroke:on?ACC:LINE,'stroke-width':on?1.3:1},svg);
+      el('rect',{x:zx[i],y:zy,width:zw,height:zh,rx:10,fill:on?'rgba(24,123,107,.07)':'rgba(15,20,25,.03)',stroke:on?ACC:LINE,'stroke-width':on?1.3:1},svg);
       txt(svg,zx[i]+zw/2,zy+zh+16,z,{'text-anchor':'middle',fill:on?INK:'#6b7484','font-size':11,'font-weight':on?600:400});
       if(!on){inst(zx[i]+8,zy+12,zw-16,48,false,4,'rgba(15,20,25,.28)');inst(zx[i]+8,zy+74,zw-16,48,false,4,'rgba(15,20,25,.28)');}
     });
@@ -621,7 +630,7 @@
       el('path',{d:`M${xs[i]},${y+9} C ${xs[i]},${yy-20} ${x},${yy-24} ${x},${yy-12}`,fill:'none',stroke:ACC2,'stroke-width':1.2,'stroke-dasharray':'3 3'},svg);
       el('rect',{x:x-50,y:yy-12,width:100,height:22,rx:6,fill:'rgba(109,91,208,.08)',stroke:ACC2,'stroke-width':1},svg);
       txt(svg,x,yy+3,'hook · '+label,{'text-anchor':'middle',fill:INK,'font-size':10.5});});
-    el('rect',{x:16,y:H-30,width:W-32,height:22,rx:6,fill:'rgba(15,157,138,.08)'},svg);
+    el('rect',{x:16,y:H-30,width:W-32,height:22,rx:6,fill:'rgba(24,123,107,.08)'},svg);
     txt(svg,W/2,H-15,'asynchronous orchestration service: integrators plug in without touching the core',{'text-anchor':'middle',fill:'#0f1419','font-size':10.5});
     host.appendChild(svg);
   })();
