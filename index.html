@@ -563,7 +563,7 @@
   const NS='http://www.w3.org/2000/svg';
   const el=(n,a,p)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;};
   const txt=(p,x,y,s,a)=>{const t=el('text',Object.assign({x,y,fill:'#53636c','font-size':12,'font-family':'Inter,system-ui,sans-serif'},a||{}),p);t.textContent=s;return t;};
-  const ACC='#187b6b',ACC2='#6d5bd0',WARM='#c59454',INK='#18242c',LINE='rgba(24,36,44,.14)';
+  const ACC='#187b6b',ACC2='#6d5bd0',WARM='#8d642e',INK='#18242c',LINE='rgba(24,36,44,.14)';
   const ym=s=>{const [y,m]=s.split('-').map(Number);return y+(m-1)/12;};
 
 
