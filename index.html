@@ -360,16 +360,17 @@
 
     <article class="case rv case--gpu">
       <div>
-        <div class="project-topline"><span>01 / ACCELERATED COMPUTE</span><span class="project-status"><span class="status-dot"></span> IN PROGRESS</span></div>
-        <div class="role">2026 · GPU infrastructure · Technical design lead</div>
-        <h3>GPU sharing for Amazon ECS</h3><div class="impact"><span>CONTROL PLANE</span><span>GPU SCHEDULING</span><span>DESIGN LEAD</span></div>
-        <p>Leading control-plane design for GPU resource sharing in containerized workloads, focusing on scheduling and task lifecycle integration.</p>
-        <p><b>My contribution:</b> Aligned resource management requirements across teams and provided technical direction for implementation.</p>
+        <div class="project-topline"><span>01 / ACCELERATED COMPUTE</span><span class="project-status status--live">SHIPPED OCT 2026</span></div>
+        <div class="role">2026 · GPU infrastructure · Control-plane technical design</div>
+        <h3>GPU sharing for Amazon ECS</h3><div class="impact"><span>CONTROL PLANE</span><span>GPU SCHEDULING</span><span>NVIDIA MPS</span></div>
+        <p>Contributed to the launch of GPU sharing on Amazon ECS, enabling multiple container tasks to share a single NVIDIA GPU through memory-aware scheduling and NVIDIA Multi-Process Service (MPS).</p>
+        <p><b>My contribution:</b> Helped lead the ECS control-plane design, aligning GPU resource scheduling, task lifecycle integration, and cross-team implementation requirements. The broader launch was a collaborative effort across control-plane and data-plane teams.</p>
+        <div class="links"><a href="https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ecs-gpu-sharing-nvidia-mps/" target="_blank" rel="noopener">AWS launch announcement ↗</a></div>
         <details><summary>How</summary>
           <ul>
-            <li>Define scheduling and lifecycle requirements for accelerated container workloads.</li>
-            <li>Align cross-service contracts and operational considerations.</li>
-            <li>Public release details and measured impact will be added after announcement.</li>
+            <li>Defined control-plane scheduling and lifecycle requirements for GPU-sharing tasks.</li>
+            <li>Aligned cross-team contracts around GPU memory allocation and resource-aware placement.</li>
+            <li>Launched support for concurrent tasks sharing a GPU on ECS Managed Instances and ECS on EC2.</li>
           </ul>
         </details>
       </div>
@@ -390,7 +391,7 @@
           </div>
         </div>
         <div class="gpu-diagram-steps"><span><b>01</b> Schedule</span><span><b>02</b> Share</span><span><b>03</b> Operate</span></div>
-        <div class="cap">Conceptual illustration only; engineering details and impact metrics will be published when available.</div>
+        <div class="cap">Conceptual illustration of GPU sharing; see the AWS launch announcement for publicly documented capabilities.</div>
       </div>
     </article>
 
